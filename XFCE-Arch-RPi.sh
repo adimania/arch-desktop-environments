@@ -2,7 +2,7 @@ echo "Run this script as root only."
 echo "You can hit Ctrl+c in next 10 seconds if you don't want to continue."
 sleep 10
 pacman-key --init 
-pacman -Syu
+pacman -Syu --noconfirm
 pacman -S --noconfirm xorg-xinit xorg-server xorg-server-utils xterm
 pacman -S --noconfirm xfce4
 pacman -S --noconfirm mesa xf86-video-fbdev xf86-video-vesa
